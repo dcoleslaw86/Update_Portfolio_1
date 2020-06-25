@@ -1,3 +1,15 @@
+/* 
+Colors Used
+#fff
+#ddd
+#affaf7
+#4aaaa5
+#efefef
+#777
+#566271
+#424b57
+*/
+
 /* unvisited link */
 
 a:link {
@@ -8,14 +20,14 @@ a:link {
 /* visited link */
 
 a:visited {
-  color: #ddd;
+  color: #fff;
   text-decoration: none;
 }
 
 /* mouse over link */
 
 a:hover {
-  color: #affaf7;
+  color: #4aaaa5;
   text-decoration: none;
 }
 
@@ -77,12 +89,72 @@ body {
   font-family: Arial, "Helvetica Neue", Helvetica, "Futura", sans-serif;
   font-size: 18px;
   line-height: 34px;
-  color: #777;
+  color: #424b57;
   background: url("../images/main_bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 * {
   box-sizing: border-box;
+}
+
+.social-link {
+  margin: 0 2px 0 2px;
+  background-color: #424b57;
+  color: #fff;
+  padding: auto;
+  text-align: center;
+}
+
+.link-info {
+  background-color: #424b57;
+}
+
+.btn-toolbar {
+  display: flex;
+  justify-content: center;
+  margin-block: auto;
+}
+
+.d-md-block{
+  margin: 10px;
+}
+
+.btn {
+  background-color: #566271;
+  border: none;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #566271;
+  border-color: #566271;
+}
+
+.btn-primary:hover {
+  color: #fff;
+  background-color: #424b57;
+  border-color: #424b57;
+}
+
+.btn-primary:focus, .btn-primary.focus {
+  color: #fff;
+  background-color: #424b57;
+  border-color: #424b57;
+  box-shadow: 0 0 0 0.2rem rgba(42, 42, 42, 0.5);
+}
+
+.carousel-caption {
+  position: absolute;
+  right: 15%;
+  bottom: 20px;
+  left: 15%;
+  z-index: 10;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: #fff;
+  text-align: center;
 }
 
 .btn-outline-success {
@@ -216,16 +288,18 @@ h3, h2 {
   border-bottom: 2px solid #eee;
 }
 
-.carousel-item{
+.carousel-item {
   width: 100%;
 }
 
-.card-title{
+.card-title {
   text-align: center;
+  padding: 10px 0 10px 0;
+
 }
 
-.card-body{
-  align-content: center;
+.card {
+  border-color: #fff;
 }
 
 #main-content {
